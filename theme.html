@@ -59,7 +59,7 @@
           <div class="site-content">
           {% if is_home or is_tag %}
             {% if is_tag %}
-            <h2 class="tag-header">Showing all posts tagged {{ tag }}:</h2>
+            <h2 class="tag-header">Wszystkie posty oznaczone tagiem: {{ tag }}:</h2>
             {% endif %}
 
             {% if posts %}
@@ -72,14 +72,14 @@
                   </h2>
                   <div class="post-metadata">
                     <div class="left">
-                      <p class="post-byline">Published by {{ site.author }}</p>
+                      <p class="post-byline">Opublikowano przez {{ site.author }}</p>
                       <p><time datetime="{{ post.created_at }}" class="post-date">{{ post.created_at|date_format }}</time></p>
                     </div>
                     <div class="right">
                       <p class="post-comment-count">
                         <a href="{{ post.permalink }}{% if site.disqus %}{% endif %}" class='dsq-comment-count comment-link commentslink'></a>
                       </p>
-                      <p><a href="{{ post.permalink }}" class="post-permalink">Permalink</a></p>
+                      <p><a href="{{ post.permalink }}" class="post-permalink">Link</a></p>
                     </div>
                   </div>
                 </header>
@@ -239,7 +239,7 @@
               </div>
             </div>
             <div class="widget widget-latestposts">
-              <h2 class="widget-title">Latest Posts</h2>
+              <h2 class="widget-title">Ostatnie wpisy</h2>
               <div class="widget-content popular-posts">
                 {% if posts_recent %}
                 <ul>
@@ -253,7 +253,7 @@
               </div>
             </div>
             <div class="widget widget-tagcloud">
-              <h2 class="widget-title">Tag Cloud</h2>
+              <h2 class="widget-title">Tagi</h2>
               <div class="widget-content tag-cloud">
                 {% if site.tags %}
                 <ul>
