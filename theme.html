@@ -73,7 +73,7 @@
                   <div class="post-metadata">
                     <div class="left">
                       <p class="post-byline">Opublikowano przez {{ site.author }}</p>
-                      <p><time datetime="{{ post.created_at }}" class="post-date">{{ post.created_at|date_format }}</time></p>
+                      <p><time datetime="{{ post.created_at }}" class="post-date">{{ post.created_at|format_date('%d.%m.%Y') }}</time></p>
                     </div>
                     <div class="right">
                       <p class="post-comment-count">
