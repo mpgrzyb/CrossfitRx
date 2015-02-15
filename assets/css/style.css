@@ -2655,7 +2655,7 @@ body {
 }
 .site-title
 {
-  background-image: url("assets/images/banner.png");
+  background-image: url(".../assets/images/banner.png");
 }
 .site-header .header-top h1 a {
   color: #111111;
