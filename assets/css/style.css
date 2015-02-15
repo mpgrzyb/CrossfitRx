@@ -2653,6 +2653,10 @@ body {
   padding-top: 0.9375rem;
   text-transform: uppercase;
 }
+.site-title
+{
+  background-image: url("assets/images/banner.png");
+}
 .site-header .header-top h1 a {
   color: #111111;
 }
