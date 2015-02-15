@@ -2656,11 +2656,6 @@ body {
 .site-header .header-top h1 a {
   color: #111111;
 }
-.site-header
-{
-  height: 70px;
-  background-image: url("assets/images/banner.png");  
-}
 .site-header .header-top h2 {
   padding-top: 5px;
   padding-top: 0.3125rem;
