@@ -10,7 +10,7 @@
       {% endif %}
       | {{ site.name }}
     </title>
-      
+
     <meta name="Author" content="Mateusz Grzyb">
     <meta name="rating" content="general">
     <meta name="robots" content="all">
@@ -142,7 +142,7 @@
                   {% if post.author %}
                   <span class="post-author-name">{{ post.author.name }}</span>
                   {% endif %}
-                  <span class="post-date">Opublikowano {{ post.created_at|format_date('%d.%m.%Y') }}</span>
+                  <span class="post-date">Opublikowano {{ post.created_at|format_date('%B %d.%m.%Y') }}</span>
                 </p>
               </a>
               <div class="dots"><span></span><span></span><span></span></div>
