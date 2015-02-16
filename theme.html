@@ -4,12 +4,18 @@
     <meta charset="utf-8">
     <title>
       {% if is_login %}Login
-      {% elif is_home %}{{ site.author }}
+      {% elif is_home %}{{ "CrossFit RX - najlepszy blog o CrossFit" }}
       {% elif is_tag %}{{ tag }}
       {% elif post %}{{ post.title }}
       {% endif %}
       | {{ site.name }}
     </title>
+
+        <meta name="Author" content="Mateusz Grzyb & Krystian Sułek">
+    <meta name="rating" content="general">
+    <meta name="robots" content="all">
+    <meta name="keywords" content="repertuar kin, filmy w tv, repertuar, kino, telewizja, film, movie, filmy, filman, repertuar kina">
+    <meta name="Description" c
 
     {{ header_meta }}
 
@@ -193,7 +199,7 @@
         </div>
 
         <div class="pagination">
-          <a href="javascript:history.go(-1);" class="prev">&laquo; Back To List</a>
+          <a href="javascript:history.go(-1);" class="prev">&laquo; Powrót do głównej</a>
         </div>
 
         {% if site.disqus %}
