@@ -10,7 +10,7 @@
       {% endif %}
       | {{ site.name }}
     </title>
-
+      
     <meta name="Author" content="Mateusz Grzyb">
     <meta name="rating" content="general">
     <meta name="robots" content="all">
@@ -37,7 +37,13 @@
     {% endif %}
   </head>
   <body{% if is_post or is_tag or is_page %} class="short-header"{% endif %}>
-
+{% if site.tags %}
+  <div class="tags">
+    {% for tag in site.tags %}
+      <a href="/tag/{{ tag.name }}">#{{ tag.name }}</a>
+    {% endfor %}
+  </div>
+{% endif %}
     {% if is_login %}
 
     {{ login_form }}
