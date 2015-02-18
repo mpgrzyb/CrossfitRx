@@ -55,7 +55,8 @@
         <ul class="cover-nav">
           <li><a href="{{ site.base_url }}">Blog</a></li>
             {% for page in pages %}
-            <li><a href="{{ page.permalink }}" class="{{ set_active(page.permalink) }}">asdf{{ page.title }}</a></li>
+            <!-- Wyświetlanie linków do podstron -->
+            <li><a href="{{ page.permalink }}" class="{{ set_active(page.permalink) }}">{{ page.title }}</a></li>
             {% endfor %}
         </ul>
         {% endif %}
@@ -70,7 +71,7 @@
         </a>
         <div class="user-avatar-hover">
           <h3>{{ site.author }}</h3>
-          <p>{{ site.bio|striptags|truncate(280, false, '...') }}</p>
+          <p>asdf{{ site.bio|striptags|truncate(280, false, '...') }}</p>
           <ul class="user-social-links">
             {% if site.twitter %}
             <li>
