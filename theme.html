@@ -71,7 +71,7 @@
         </a>
         <div class="user-avatar-hover">
           <h3>{{ site.author }}</h3>
-          <p>asdf{{ site.bio|striptags|truncate(280, false, '...') }}</p>
+          <p>{{ site.bio|striptags|truncate(280, false, '...') }}</p>
           <ul class="user-social-links">
             {% if site.twitter %}
             <li>
@@ -131,11 +131,11 @@
         <div class="posts">
           {% for post in posts %}
           <div class="item">
-              <h3><a href="{{ post.permalink }}">{{ post.title }}</a></h3>
-              <div class="post-content" data-type-cleanup="true">
+              <h3>la1<a href="{{ post.permalink }}">{{ post.title }}</a></h3>
+              <div class="post-content" data-type-cleanup="true">la2
                 {{ post.content }}
               </div>
-              <a class="post-author" href="{{ site.base_url }}">
+              <a class="post-author" href="{{ site.base_url }}">la3
                 {% if post.author %}
                 <img src="{{ post.author.avatar }}" />
                 {% endif %}
